@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <!-- Load track world with car -->
 <launch>
+    <env name="GAZEBO_MODEL_PATH" value="$(find car_gazebo)/models:$(optenv GAZEBO_MODEL_PATH)"/>
+
     <!-- Gazebo -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(find car_gazebo)/worlds/track.world"/>
