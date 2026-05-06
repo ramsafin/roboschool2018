@@ -58,9 +58,6 @@ Move a six-wheeled differential drive mobile robot along the colored line using 
    
    # line follower (C++)
    rosrun car_hackathon line_follower_cpp
-   
-   # control the traffic lights
-   rosrun car_gazebo light_controller.py
    ```
 
 ## Useful Resources
